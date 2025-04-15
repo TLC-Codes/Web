@@ -1,0 +1,104 @@
+/* CSS Reset */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden; /* Prevent resizing of the box */
+}
+
+body {
+    background-image: url('supportbackground.png'); /* User's specified background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-color: #007bff; /* Fallback background color */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full height of the viewport */
+    position: relative; /* Allow absolute positioning of child elements */
+}
+
+.black-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Black transparent background for the form */
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    width: 400px; /* Increased width for the form */
+    text-align: center; /* Center text within the form */
+    margin: 0 auto; /* Center the box horizontally */
+    resize: none;
+}
+
+h1 {
+    color: #fff; /* White color for the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+    text-decoration: underline; /* Underline the heading */
+    text-align: center;
+}
+
+label {
+    color: #fff; /* White color for labels */
+    text-decoration: underline; /* Underline the labels */
+}
+
+input, textarea {
+    width: calc(100% - 24px); /* Full width with equal spacing on both sides */
+    margin: 10px auto; /* Center the input fields with equal margin on both sides */
+    overflow: hidden; /* Prevent resizing when content exceeds */   
+    padding: 12px; /* Increased padding */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+#dummy-button {
+    background-color: rgb(255, 255, 255); /* Solid white background */
+    color: black; /* Black text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition for hover effect */
+}
+
+#dummy-button:hover {
+    background-color: rgb(255, 255, 255); /* Change background to black on hover */
+    color: rgb(0, 0, 0); /* Change text color to white for contrast */
+}
+
+#absenden-button {
+    background-color: white; /* Change background to white */
+    color: black; /* Black text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition for hover effect */
+}
+
+#test-button:hover {
+    background-color: lightgray; /* Change background to light gray on hover */
+    color: white; /* Change text color to white for contrast */
+}
+
+
+#home-button {
+    background-color: white; /* Solid white background */
+    color: black; /* Black text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition for hover effect */
+}
+
+#home-button:hover {
+    background-color: black; /* Change background to black on hover */
+    color: white; /* Change text color to white for contrast */
+}
+
+#charCount {
+    font-size: 12px; /* Font size for character count */
+    color: #666; /* Color for character count */
+}

@@ -1,0 +1,118 @@
+body {
+    background-image: url('loginbackground.png');
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 400px; /* Increased width */
+    height: auto; /* Adjust height based on content */
+    min-height: 450px; /* Increased minimum height for more space */
+    background-color: black;
+    opacity: 0.8; /* Optional: to make it slightly transparent */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color inside the box */
+    padding: 50px; /* Increased padding for more space */
+    position: relative; /* For positioning footer */
+    border-radius: 15px; /* Increased rounding for corners */
+}
+
+.login-box h2 {
+    margin: 0 0 15px 0; /* Margin for the title */
+}
+
+.login-box input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input fields */
+    margin: 10px 0; /* Margin between input fields */
+    border: 2px solid #ccc; /* Softer light gray border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: black; /* Set input fields to black */
+    color: white; /* Text color inside input fields */
+}
+
+#login-button {
+    background-color: white; /* Change background to white */
+    color: black; /* Change text color to black */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px; /* Margin above the button */
+    display: none; /* Initially hidden */
+}
+
+
+.home {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 15px; /* Margin below the button */
+}
+
+.support {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; /* Positioning */
+    top: 10px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+}
+
+.home:hover,
+.support:hover,
+#login-button:hover {
+    background-color: black; /* Change background to black on hover */
+    color: white; /* Change text color to white for contrast */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+
+#home-button:hover,
+#support-button:hover,
+#login-button:hover {
+    background-color: black; /* Change background to black on hover */
+    color: white; /* Change text color to white for contrast */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+
+#login-button:hover {
+    background-color: black; /* Change background to black on hover */
+    color: white; /* Change text color to white for contrast */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+
+
+
+
+
+.register-link {
+    color: white; /* Text color */
+    text-decoration: underline; /* Underline the text */
+    margin-top: 10px; /* Margin above the link */
+    display: block; /* Make it a block element */
+    text-align: center; /* Center the text */
+}
+
+.footer-link {
+    color: blue; /* Change footer link color to blue */
+    text-decoration: underline; /* Add underline to the footer link */
+    text-align: center; /* Center the footer text */
+    display: block; /* Make it a block element */
+    margin-top: 10px; /* Margin above the footer link */
+}

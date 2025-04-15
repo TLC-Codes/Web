@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <title>Register</title>
+    <script>
+        function toggleButton() {
+            const inputs = document.querySelectorAll('.login-box input');
+            const button = document.getElementById('register-button');
+            button.style.display = Array.from(inputs).every(input => input.value) ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="login-box">
+        <button id="home-button" onclick="window.location.href='index.html'">Home</button>
+        
+        <button id="support-button" onclick="window.location.href='support.html'">Support</button>
+
+
+        <h2>Registrieren</h2>
+
+        <input type="text" placeholder="Benutzer" required oninput="toggleButton()">
+        <input type="email" placeholder="E-Mail" required oninput="toggleButton()">
+        <input type="email" placeholder="E-Mail Bestätigen" required oninput="toggleButton()">
+        <input type="password" placeholder="Passwort" required oninput="toggleButton()">
+        <button id="register-button">Registrieren</button>
+
+        <p><a href="Login.html" class="register-link">Bereits ein Konto? Jetzt Anmelden</a></p>
+        <p>&copy; 2025 TuningLabs Customs. Alle Rechte vorbehalten. | <a href="Datenschutz.html" class="footer-link">Datenschutz</a></p>
+    </div>
+</body>
+</html>

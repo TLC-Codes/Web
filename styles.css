@@ -1,0 +1,126 @@
+body {
+    background-color: black; /* Hintergrundfarbe */
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+header {
+    text-align: center;
+    color: white; 
+}
+
+.top-bar, .bottom-bar {
+    background-color: black; 
+    height: 50px; 
+}
+
+h1, h2 {
+    color: rgb(255, 255, 255); 
+    margin: 0; /* Entfernt den Standard-Margin */
+}
+
+.shop-link {
+    color: white; /* Textfarbe */
+    text-decoration: none; /* Unterstreichung entfernen */
+    margin-top: 20px; /* Abstand nach oben weiter erhöhen */
+    display: inline-block; /* Macht den Link zu einem Inline-Blockelement */
+    font-size: 30px; /* Schriftgröße anpassen */
+    padding: 5px 50px; /* Innenabstand für bessere Klickfläche */
+    transition: background-color 0.3s; /* Übergang für Hover-Effekt */
+}
+
+
+
+
+.shop-link:hover {
+    background-color: rgba(255, 165, 0, 0.5); /* Hintergrundfarbe beim Hover */
+} 
+
+.logo {
+    margin: 20px 0; 
+    max-width: 100%;
+    height: auto; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+nav li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color: orange; 
+    font-weight: bold;
+    font-size: inherit; /* Reset to inherit font size */
+}
+
+h1 {
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    font-size: 50px; /* Increase font size for TL-Customs */
+}
+
+
+.header2 {
+    position: fixed; /* Fixiert den Header am oberen Rand */
+    top: 20px; /* Abstand vom oberen Rand */
+    left: 20px; /* Abstand vom linken Rand */
+    width: 10%; /* Breite des Headers */
+    background-color: black; /* Hintergrundfarbe des Headers */
+    padding: 10px; /* Innenabstand */
+    display: flex; /* Flexbox für die Anordnung */
+    align-items: center; /* Vertikale Zentrierung */
+    z-index: 1000; /* Stellt sicher, dass der Header über anderen Inhalten liegt */
+}
+
+.round-button {
+    width: 100px; /* Breite des Kreises */
+    height: 100px; /* Höhe des Kreises */
+    position: absolute; /* Fixiert den Button an der Position */
+    top: 20px; /* Abstand vom oberen Rand */
+    right: 20px; /* Abstand vom rechten Rand */
+    display: flex; /* Flexbox für zentrierten Inhalt */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    border-radius: 50%; /* Macht den Button rund */
+    overflow: hidden; /* Versteckt Überlauf */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für 3D-Effekt */
+    background-color: rgb(0, 0, 0);
+    transition: box-shadow 0.3s ease;
+}         
+.round-button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 131, 0.7);
+    transform: scale(1.1);
+}
+
+.no-profile-image {
+    width: 100%; /* Bild füllt den Button */
+    height: 100%; /* Bild füllt den Button */
+    object-fit: cover; /* Stellt sicher, dass das Bild gut aussieht */
+}
+      
+.footer p {
+    margin: 0; /* Entfernt den Standard-Margin des Paragraphen */
+    color: #ffffff; /* Textfarbe */
+}
+
+.footer {
+    position: relative; /* Positioniert den Footer relativ zum Inhalt */
+    bottom: 0; /* Abstand vom unteren Rand */
+    left: 0; /* Abstand vom linken Rand */
+    width: 100%; /* Breite des Footers */
+    background-color: black; /* Hintergrundfarbe */
+    text-align: center; /* Zentriert den Text */
+    padding: 10px 0; /* Innenabstand oben und unten */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Schatten für 3D-Effekt */
+}
